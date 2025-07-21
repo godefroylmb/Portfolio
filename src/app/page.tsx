@@ -1,4 +1,4 @@
-import Card from "@/pages/components/project_card";
+import Card from "@/pages/components/card";
 import Image from "next/image";
 
 export default function Home() {
@@ -13,24 +13,11 @@ export default function Home() {
           height={38}
           priority
         />
-        <Card
-          name="My Project"
-          description="This is a short description of my project."
-          githubUrl="https://github.com/myusername/myproject"
-          websiteUrl="https://myproject.com"
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <Card name="Ladybug classification" description="A classification project to distinguish between European and Asian ladybugs using RGB and segmented images. Features were extracted manually, and interpretable models like decision trees achieved up to 94% accuracy." githubUrl="https://github.com/godefroylmb/Ladybug/tree/main/ladybug" />
+          <Card name="Billboard scraper" description="An automated Airflow pipeline that scrapes weekly Billboard chart data and uploads it to Kaggle. Originally built for a data engineering project, it ensures up-to-date, structured music chart datasets." githubUrl="https://github.com/godefroylmb/Billboard" websiteUrl="https://www.kaggle.com/datasets/ludmin/billboard" />
+        </div>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a

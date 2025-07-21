@@ -10,17 +10,22 @@ type CardProps = {
 export default function Card({ name, description, githubUrl, websiteUrl }: CardProps) {
   return (
     <div className="border rounded-2xl p-4 shadow-md bg-white">
-      <h2 className="text-xl font-semibold mb-2">{name}</h2>
+      <h2 className="text-xl font-semibold text-black mb-2">{name}</h2>
       <p className="text-gray-700 mb-4">{description}</p>
-      <div className="flex space-x-4">
+      <div className="flex space-x-4 justify-center mt-auto">
         {githubUrl && (
           <a
             href={githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="inline-flex items-center justify-center px-3 py-2 bg-gray-100 text-black rounded-lg hover:bg-gray-200 transition min-w-[80px]"
           >
-            GitHub
+            <Image
+              src="/icon/github.svg"
+              alt="GitHub"
+              width={20}
+              height={20}
+            />
           </a>
         )}
         {websiteUrl && (
@@ -28,9 +33,14 @@ export default function Card({ name, description, githubUrl, websiteUrl }: CardP
             href={websiteUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="inline-flex items-center justify-center px-3 py-2 bg-gray-100 text-black rounded-lg hover:bg-gray-200 transition min-w-[80px]"
           >
-            Website
+            <Image
+              src="/icon/web.svg"
+              alt="GitHub"
+              width={20}
+              height={20}
+            />
           </a>
         )}
       </div>
