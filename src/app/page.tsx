@@ -1,4 +1,5 @@
 import Card from "@/pages/components/card";
+import Profile from "@/pages/components/profile";
 import Image from "next/image";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
           height={38}
           priority
         />
+        <Profile />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <Card name="Ladybug classification" description="A classification project to distinguish between European and Asian ladybugs using RGB and segmented images. Features were extracted manually, and interpretable models like decision trees achieved up to 94% accuracy." githubUrl="https://github.com/godefroylmb/Ladybug/tree/main/ladybug" />
