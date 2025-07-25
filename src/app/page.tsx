@@ -1,6 +1,5 @@
 import Card from "@/pages/components/card";
 import Profile from "@/pages/components/profile";
-import Image from "next/image";
 
 export default function Home() {
   return (
