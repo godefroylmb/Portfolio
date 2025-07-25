@@ -2,36 +2,81 @@ import Image from "next/image";
 
 export default function Profile() {
   return (
-    <div className="flex items-center justify-between gap-6 flex-wrap sm:flex-nowrap w-full">
-      <div className="flex flex-col justify-start gap-2 text-left max-w-[60%]">
-        <div>
-          <h1 className="text-3xl font-semibold text-black">Godefroy Lambert</h1>
-          <p className="text-gray-600 text-base">Data Scientist — Open to opportunities</p>
-        </div>
-        <div className="mt-4">
-          <h2 className="text-md font-bold text-black">Experience</h2>
-          <ul className="text-gray-700 list-disc list-inside">
-            <li>Data Science Intern – Verychic (Barcelona)</li>
-            <li>Embedded software – OMWAVE (Paris)</li>
-          </ul>
-        </div>
-        <div className="mt-2">
-          <h2 className="text-md font-semibold text-black">Education</h2>
-          <ul className="text-gray-700 list-disc list-inside">
-            <li>Master 2 in Data Science – Institut Polytechnique de Paris (Paris)</li>
-            <li>Engineering Degree – ISEP (Paris)</li>
-          </ul>
-        </div>
-      </div>
+    <div className="w-full">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 w-full min-h-screen sm:min-h-0 sm:gap-6 sm:flex-nowrap items-center justify-center">
+        <div className="flex flex-col justify-start gap-2 sm:text-left sm:items-start text-center items-center w-full max-w-[60%] sm:max-w-none">
+          <div>
+            <h1 className="text-3xl font-semibold text-black">Godefroy Lambert</h1>
+            <p className="text-gray-600 text-base">Data Scientist — Open to opportunities</p>
+          </div>
 
-      <div className="w-40 sm:w-48 md:w-64 lg:w-72 xl:w-80 flex-shrink-0">
-        <Image
-          src="/img/me.jpeg"
-          alt="Profile Picture"
-          width={400}
-          height={400}
-          className="rounded-xl object-cover w-full h-auto"
-        />
+          <p className="text-gray-700 text-sm mt-1 max-w-md mx-auto sm:mx-0">
+            Passionate about applying data science and machine learning to solve real-world problems.
+          </p>
+
+          <div className="mt-4">
+            <h2 className="text-md font-bold text-black">Experience</h2>
+            <ul className="text-black -700 list-disc list-inside space-y-3">
+              <li>
+                <span>Data Scientist Intern – Verychic (Barcelona)</span>
+                <p className="text-sm text-gray-600 mt-1 ml-[1.2ch]">
+                  Performed NLP and topic modeling on product descriptions to enhance hotel recommendation algorithms.
+                </p>
+              </li>
+              <li>
+                <span>Embedded software – OMWAVE (Paris)</span>
+                <p className="text-sm text-gray-600 mt-1 ml-[1.2ch]">
+                  Developed a Java-based Android application under AOSP for a connected henhouse project, leveraging Firebase for backend services.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div className="mt-4">
+            <h2 className="text-md font-bold text-black">Projects</h2>
+            <ul className="text-gray-700 list-disc list-inside">
+              <li>
+                Hi! Paris Hi!ckhaton –{" "}
+                <a
+                  href="https://www.smartcertificate.com/SmartDiploma/?1%7c05f17624-ed53-4459-bc46-eff76d464251%7c95ba7642-4a94-4f5e-9130-0a26cbd1d90f#/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline"
+                >
+                  Honorable Mention for clean code
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.smartcertificate.com/SmartDiploma/?1%7c7d3f566f-f474-4009-bb9f-45d06fde4177%7ceda43d06-0435-45b1-ad28-2b301da5a7f0#/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline"
+                >
+                  Hi! Paris Data Bootcamp
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="mt-2">
+            <h2 className="text-md font-semibold text-black">Education</h2>
+            <ul className="text-gray-700 list-disc list-inside">
+              <li>Master 2 in Data Science – Institut Polytechnique de Paris (Paris)</li>
+              <li>Engineering Degree – ISEP (Paris)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="hidden sm:block w-40 sm:w-48 md:w-64 lg:w-72 xl:w-80 flex-shrink-0">
+          <Image
+            src="/img/me.jpeg"
+            alt="Profile Picture"
+            width={400}
+            height={400}
+            className="rounded-xl object-cover w-full h-auto"
+          />
+        </div>
       </div>
     </div>
   );

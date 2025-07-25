@@ -28,6 +28,13 @@ export default function Home() {
             language="Python"
             stack="Airflow, BeautifulSoup, Pandas"
           />
+          <Card
+            name="Fairness blog"
+            description="A concise article that interprets and explains the concepts of ROC and AUC, using insights from a research paper, with emphasis on their implications for fairness in machine learning."
+            githubUrl="https://github.com/louise-davy/responsible-ai-datascience-ipParis.github.io"
+            websiteUrl="https://responsible-ai-datascience-ipparis.github.io/posts/lambert-davy/"
+            language="Hugo"
+          />
         </div>
       </main>
 

@@ -11,7 +11,7 @@ type CardProps = {
 
 export default function Card({ name, description, githubUrl, websiteUrl, language, stack }: CardProps) {
   return (
-    <div className="rounded-2xl p-4 shadow-md bg-[#fffefe] flex flex-col h-full">
+    <div className="rounded-2xl p-4 shadow-[0_4px_12px_rgba(0,0,0,0.1)] bg-[#fffefe] flex flex-col h-full">
       <h2 className="text-xl font-semibold text-[#1c1c1f] mb-2">{name}</h2>
       <p className="text-gray-700 mb-4">{description}</p>
 
