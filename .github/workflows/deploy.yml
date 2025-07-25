@@ -27,7 +27,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: yourdockerhubusername/your-repo-name:latest
+          tags: godefroylmb/portfolio:latest
 
       - name: Deploy to server via SSH
         uses: appleboy/ssh-action@v0.1.9
@@ -37,7 +37,7 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           port: ${{ secrets.SERVER_SSH_PORT }}
           script: |
-            docker pull yourdockerhubusername/your-repo-name:latest
+            docker pull godefroylmb/portfolio:latest
             docker stop nextjs-app || true
             docker rm nextjs-app || true
-            docker run -d --name nextjs-app -p 80:3000 yourdockerhubusername/your-repo-name:latest
+            docker run -d --name nextjs-app -p 80:8192 godefroylmb/portfolio:latest
