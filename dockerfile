@@ -1,4 +1,4 @@
-FROM node:latest-alpine AS builder
+FROM alpine:3.21 AS builder
 
 RUN apk add --no-cache libc6-compat
 
@@ -14,7 +14,7 @@ COPY . .
 RUN pnpm build
 
 
-FROM node:latest-alpine AS runner
+FROM alpine:3.21 AS runner
 
 WORKDIR /app
 
