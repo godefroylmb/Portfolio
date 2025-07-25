@@ -20,6 +20,13 @@ export default function Home() {
             stack="Pandas, Scikit-learn, Matplotlib"
           />
           <Card
+            name="Fairness blog"
+            description="A concise article that interprets and explains the concepts of ROC and AUC, using insights from a research paper, with emphasis on their implications for fairness in machine learning."
+            githubUrl="https://github.com/louise-davy/responsible-ai-datascience-ipParis.github.io"
+            websiteUrl="https://responsible-ai-datascience-ipparis.github.io/posts/lambert-davy/"
+            language="Hugo"
+          />
+          <Card
             name="Billboard scraper"
             description="An automated Airflow pipeline that scrapes weekly Billboard chart data and uploads it to Kaggle. Originally built for a data engineering project, it ensures up-to-date, structured music chart datasets."
             githubUrl="https://github.com/godefroylmb/Billboard"
@@ -28,11 +35,12 @@ export default function Home() {
             stack="Airflow, BeautifulSoup, Pandas"
           />
           <Card
-            name="Fairness blog"
-            description="A concise article that interprets and explains the concepts of ROC and AUC, using insights from a research paper, with emphasis on their implications for fairness in machine learning."
-            githubUrl="https://github.com/louise-davy/responsible-ai-datascience-ipParis.github.io"
-            websiteUrl="https://responsible-ai-datascience-ipparis.github.io/posts/lambert-davy/"
-            language="Hugo"
+            name="Portfolio"
+            description="The website you're looking at."
+            githubUrl="https://github.com/godefroylmb/Portfolio"
+            websiteUrl="https://godefroy.ovh"
+            language="TypeScript"
+            stack="Next.js, Tailwind CSS"
           />
         </div>
       </main>
