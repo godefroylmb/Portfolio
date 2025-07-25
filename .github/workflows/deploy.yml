@@ -28,6 +28,7 @@ jobs:
           context: .
           push: true
           tags: godefroylmb/portfolio:latest
+          platforms: linux/arm64
 
       - name: Deploy to server via SSH
         uses: appleboy/ssh-action@v0.1.9
@@ -40,4 +41,4 @@ jobs:
             docker pull godefroylmb/portfolio:latest
             docker stop nextjs-app || true
             docker rm nextjs-app || true
-            docker run -d --name nextjs-app -p 80:8192 godefroylmb/portfolio:latest
+            docker run -d --name nextjs-app -p 8192:8192 godefroylmb/portfolio:latest
