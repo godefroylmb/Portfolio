@@ -3,37 +3,47 @@ import Image from "next/image";
 export default function Profile() {
   return (
     <div className="w-full">
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 w-full min-h-screen sm:min-h-0 sm:gap-6 sm:flex-nowrap items-center justify-center">
-        <div className="flex flex-col justify-start gap-2 sm:text-left sm:items-start text-center items-center w-full max-w-[60%] sm:max-w-none">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 w-full sm:gap-6 sm:flex-nowrap items-center justify-center">
+        <div className="flex flex-col justify-start gap-2 sm:text-left sm:items-start text-center items-center w-full">
           <div>
-            <h1 className="text-3xl font-semibold text-black">Godefroy Lambert</h1>
-            <p className="text-gray-600 text-base">Data Scientist — Open to opportunities</p>
+            <h1 className="text-4xl font-bold text-black">Godefroy Lambert</h1>
+            <p className="text-gray-600 text-lg">Data Scientist — Open to opportunities</p>
           </div>
 
-          <p className="text-gray-700 text-sm mt-1 max-w-md mx-auto sm:mx-0">
+          <p className="text-gray-700 text-base mt-2 max-w-md sm:max-w-none">
             Passionate about applying data science and machine learning to solve real-world problems.
           </p>
 
-          <div className="mt-4">
-            <h2 className="text-md font-bold text-black">Experience</h2>
-            <ul className="text-black -700 list-disc list-inside space-y-3">
+          <div className="mt-6">
+            <h2 className="text-lg font-bold text-black">Experience</h2>
+            <ul className="text-black list-disc list-inside space-y-3">
               <li>
                 <span>Data Scientist Intern – Verychic (Barcelona)</span>
-                <p className="text-sm text-gray-600 mt-1 ml-[1.2ch]">
-                  Performed NLP and topic modeling on product descriptions to enhance hotel recommendation algorithms.
-                </p>
+                <div className="ml-5">
+                  <p className="text-sm text-gray-600 mt-1">
+                    Performed NLP and topic modeling on product descriptions to enhance hotel recommendation algorithms.
+                  </p>
+                  <p className="text-sm text-gray-500 mt-1 italic">
+                    Python, scikit-learn, Tensorflow, spaCy, NLTK
+                  </p>
+                </div>
               </li>
               <li>
                 <span>Embedded software – OMWAVE (Paris)</span>
-                <p className="text-sm text-gray-600 mt-1 ml-[1.2ch]">
-                  Developed a Java-based Android application under AOSP for a connected henhouse project, leveraging Firebase for backend services.
-                </p>
+                <div className="ml-5">
+                  <p className="text-sm text-gray-600 mt-1">
+                    Developed a Java-based Android application under AOSP for a connected henhouse project, leveraging Firebase for backend services.
+                  </p>
+                  <p className="text-sm text-gray-500 mt-1 italic">
+                    Java, Android, Firebase
+                  </p>
+                </div>
               </li>
             </ul>
           </div>
 
-          <div className="mt-4">
-            <h2 className="text-md font-bold text-black">Projects</h2>
+          <div className="mt-6">
+            <h2 className="text-lg font-bold text-black">Projects</h2>
             <ul className="text-gray-700 list-disc list-inside">
               <li>
                 Hi! Paris Hi!ckhaton –{" "}
@@ -59,8 +69,8 @@ export default function Profile() {
             </ul>
           </div>
 
-          <div className="mt-2">
-            <h2 className="text-md font-semibold text-black">Education</h2>
+          <div className="mt-4">
+            <h2 className="text-lg font-semibold text-black">Education</h2>
             <ul className="text-gray-700 list-disc list-inside">
               <li>Master 2 in Data Science – Institut Polytechnique de Paris (Paris)</li>
               <li>Engineering Degree – ISEP (Paris)</li>

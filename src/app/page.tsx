@@ -1,7 +1,6 @@
 import Card from "@/pages/components/card";
 import Footer from "@/pages/components/footer";
 import Profile from "@/pages/components/profile";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -30,7 +29,7 @@ export default function Home() {
           />
           <Card
             name="Billboard scraper"
-            description="An automated Airflow pipeline that scrapes weekly Billboard chart data and uploads it to Kaggle. Originally built for a data engineering project, it ensures up-to-date, structured music chart datasets."
+            description="An automated Airflow pipeline that scrapes weekly Billboard chart data and uploads it to Kaggle. Originally built for a data engineering project, it ensures up-to-date, structured music chart datasets. 500 lines added each week across various datasets."
             githubUrl="https://github.com/godefroylmb/Billboard"
             websiteUrl="https://www.kaggle.com/datasets/ludmin/billboard"
             language="Python"
