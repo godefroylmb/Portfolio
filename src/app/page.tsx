@@ -1,5 +1,7 @@
 import Card from "@/pages/components/card";
+import Footer from "@/pages/components/footer";
 import Profile from "@/pages/components/profile";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -45,7 +47,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center" />
+      <Footer />
     </div>
   );
 }
