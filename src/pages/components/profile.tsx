@@ -6,35 +6,35 @@ export default function Profile() {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 w-full sm:gap-6 sm:flex-nowrap items-center justify-center">
         <div className="flex flex-col justify-start gap-2 sm:text-left sm:items-start text-center items-center w-full">
           <div>
-            <h1 className="text-4xl font-bold text-black">Godefroy Lambert</h1>
+            <h1 className="text-5xl font-bold text-black">Godefroy Lambert</h1>
             <p className="text-gray-600 text-lg">Data Scientist — Open to opportunities</p>
           </div>
 
-          <p className="text-gray-700 text-base mt-2 max-w-md sm:max-w-none">
+          <p className="text-gray-700 text-lg mt-2 max-w-md sm:max-w-none">
             Passionate about applying data science and machine learning to solve real-world problems.
           </p>
 
           <div className="mt-6">
-            <h2 className="text-lg font-bold text-black">Experience</h2>
+            <h2 className="text-xl font-bold text-black">Experience</h2>
             <ul className="text-black list-disc list-inside space-y-3">
               <li>
-                <span>Data Scientist Intern – Verychic (Barcelona)</span>
+                <span className="text-base">Data Scientist Intern – Verychic (Barcelona)</span>
                 <div className="ml-5">
-                  <p className="text-sm text-gray-600 mt-1">
+                  <p className="text-base text-gray-600 mt-1">
                     Performed NLP and topic modeling on product descriptions to enhance hotel recommendation algorithms.
                   </p>
-                  <p className="text-sm text-gray-500 mt-1 italic">
+                  <p className="text-base text-gray-500 mt-1 italic">
                     Python, scikit-learn, Tensorflow, spaCy, NLTK
                   </p>
                 </div>
               </li>
               <li>
-                <span>Embedded software – OMWAVE (Paris)</span>
+                <span className="text-base">Embedded software – OMWAVE (Paris)</span>
                 <div className="ml-5">
-                  <p className="text-sm text-gray-600 mt-1">
+                  <p className="text-base text-gray-600 mt-1">
                     Developed a Java-based Android application under AOSP for a connected henhouse project, leveraging Firebase for backend services.
                   </p>
-                  <p className="text-sm text-gray-500 mt-1 italic">
+                  <p className="text-base text-gray-500 mt-1 italic">
                     Java, Android, Firebase
                   </p>
                 </div>
@@ -43,8 +43,8 @@ export default function Profile() {
           </div>
 
           <div className="mt-6">
-            <h2 className="text-lg font-bold text-black">Projects</h2>
-            <ul className="text-gray-700 list-disc list-inside">
+            <h2 className="text-xl font-bold text-black">Projects</h2>
+            <ul className="text-gray-700 list-disc list-inside text-base">
               <li>
                 Hi! Paris Hi!ckhaton –{" "}
                 <a
@@ -69,9 +69,9 @@ export default function Profile() {
             </ul>
           </div>
 
-          <div className="mt-4">
-            <h2 className="text-lg font-semibold text-black">Education</h2>
-            <ul className="text-gray-700 list-disc list-inside">
+          <div className="mt-6">
+            <h2 className="text-xl font-semibold text-black">Education</h2>
+            <ul className="text-gray-700 list-disc list-inside text-base">
               <li>Master 2 in Data Science – Institut Polytechnique de Paris (Paris)</li>
               <li>Engineering Degree – ISEP (Paris)</li>
             </ul>
