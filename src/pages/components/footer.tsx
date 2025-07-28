@@ -16,7 +16,7 @@ export default function Footer() {
           className="hover:opacity-80 transition"
         />
       </a>
-      <a href="mailto:godefroy.lambert@example.com">
+      <a href="mailto:godefroy.work@gmail.com">
         <Image
           src="/icon/mail.svg"
           alt="Email"
