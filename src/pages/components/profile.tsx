@@ -39,6 +39,17 @@ export default function Profile() {
                   </p>
                 </div>
               </li>
+              <li>
+                <span className="text-base">Technical lead – Junior ISEP (Student Organization)</span>
+                <div className="ml-5">
+                  <p className="text-base text-gray-600 mt-1">
+                    Maintained and updated a custom ERP, built with React Typescript and Java Spring Boot. Deployement of projects and feasability checks of missions
+                  </p>
+                  <p className="text-base text-gray-500 mt-1 italic">
+                    React Typescript, Java, Docker
+                  </p>
+                </div>
+              </li>
             </ul>
           </div>
 
