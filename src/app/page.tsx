@@ -37,11 +37,11 @@ export default function Home() {
           />
           <Card
             name="Portfolio"
-            description="The website you're looking at."
+            description="The website you're looking at, dockerfile and CI/CD included through GitHub Actions."
             githubUrl="https://github.com/godefroylmb/Portfolio"
             websiteUrl="https://godefroy.ovh"
             language="TypeScript"
-            stack="Next.js, Tailwind CSS"
+            stack="Next.js, Tailwind CSS, Docker"
           />
         </div>
       </main>
