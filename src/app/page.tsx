@@ -17,6 +17,7 @@ export default function Home() {
             name="Ladybug classification"
             description="A classification project to distinguish between European and Asian ladybugs using RGB and segmented images. Features were extracted manually, and interpretable models like decision trees achieved up to 94% accuracy."
             githubUrl="https://github.com/godefroylmb/Ladybug/tree/main/ladybug"
+            websiteUrl="https://ladybug.godefroy.ovh"
             language="Python"
             stack="Pandas, Scikit-learn, Matplotlib"
           />
