@@ -46,4 +46,5 @@ jobs:
               --name portfolio \
               --network caddy_net \
               --restart unless-stopped \
+              -p 8192:8192 \
               godefroylmb/portfolio:latest
