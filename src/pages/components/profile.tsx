@@ -7,7 +7,7 @@ export default function Profile() {
         <div className="flex flex-col justify-start gap-2 sm:text-left sm:items-start text-center items-center w-full">
           <div>
             <h1 className="text-5xl font-bold text-black">Godefroy Lambert</h1>
-            <p className="text-gray-600 text-lg">Data Scientist — Open to opportunities</p>
+            <p className="text-gray-600 text-lg">Data Scientist — Data consultant @ SBI</p>
           </div>
 
           <p className="text-gray-700 text-lg mt-2 max-w-md sm:max-w-none">
@@ -17,6 +17,19 @@ export default function Profile() {
           <div className="mt-6">
             <h2 className="text-xl font-bold text-black">Experience</h2>
             <ul className="text-black list-disc list-inside space-y-3">
+              <li>
+                <span className="text-base">Data Consultant – SBI (PARIS)</span>
+                <div className="ml-5">
+                  <p className="text-base text-gray-600 mt-1">
+                    Tackling Data Science challenge & data engineering project. <br/>
+                    Established a priority list of client to visit to get more sales trhough data science algorithms. <br/>
+                    Migration of data pipelines between clouds providers
+                  </p>
+                  <p className="text-base text-gray-500 mt-1 italic">
+                    Python, Snowflake, Databricks, Github, scikit-learn
+                  </p>
+                </div>
+              </li>
               <li>
                 <span className="text-base">Data Scientist Intern – Verychic (Barcelona)</span>
                 <div className="ml-5">
